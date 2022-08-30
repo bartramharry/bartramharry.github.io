@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+      <!-- jquery-ui css: required for code to work -->
+      <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- jquery js: required for code to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jquery-ui js: required for code to work -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- main js: required for code to work -->
+    <script src="../js/script.js"></script>
+    <!-- main css: required for code to work   -->
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Learn to code Logo</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/programStructure.html">Basic program structure</a></li>
+                <li><a href="../pages/variableTypes.html">Variable types</a></li>
+                <li><a href="../pages/mathCalculations.html">Mathematical calculations</a></li>
+                <li><a href="../pages/printScreen.html">Printing to screen</a></li>
+                <li><a href="../pages/selectionIteration.html">Selection and Iteration</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Mathematical Calculations
+        </h1>
+    </header>
+    <section>
+        <div class="grid">
+            <div class="column"><h2>Basic arthmetric</h2>Arithmetic is used all the time in computer programs, so an understanding of how computers use arithmetic is useful. The adjacent table lists the common arithmetic processes with their programming equivalents:</div>
+            <div class="column"><br></br><table style="width:100%">
+                <tr>
+                  <th>Arithmetic process</th>
+                  <th>Programming equivalent</th>
+                  
+                </tr>
+                <tr>
+                    <td>Addition (plus)</td>
+                    <td>+</td>
+                </tr>
+                <tr>
+                    <td>Subtraction (minus)</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td>Multiplication</td>
+                    <td>*</td>
+                </tr>
+                <tr>
+                    <td>Division</td>
+                    <td>/</td>
+                </tr>               
+              </table></div>
+            <div class="column"><h2>Simple calculations</h2>Computers can be programmed to carry out calculations so long as the correct formulas to use are known. Some simple mathematical examples in pseudocode are:<br></br>
+                <ul>
+                    <li>print (4 + 5) 9</li>
+                    <li>print (4 * 6) 24</li>
+                    <li>print (35 / 7) 5</li>
+                    <li>print (20 - 7) 13</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section>
+       <!-- exercise wrapper start -->
+        <div class="exe-wrapper exe3">
+           <!-- exercise title -->
+            <h2>Javascript Practical</h2>
+            <!-- exercise content start -->
+            <div class="exe-content">
+                <!-- exercise question start -->
+              <div class="exe-part active">
+                <div class="exe-header">
+                   <!-- exercise question text -->
+                  <h4>Add 10 with 5, and show the result:</h4>
+                </div>
+                <div class="exe-body">
+                   <!-- &nbsp; force adding a single space -->
+                   <!-- let x = 10; -->
+                  <h3>let x = <span id="exe3-drop1" class="exe-block"></span>;</h3>
+                  <!-- let y = 5; -->
+                  <h3>let y = 5;</h3>
+                  <!-- let z = x + y; -->
+                  <h3>
+                    let z = x <span id="exe3-drop2" class="exe-block"></span> &nbsp;
+                    y;
+                  </h3>
+                  <!-- console.log(z); // output: 15 -->
+                  <h3>
+                    console.log(&nbsp;&nbsp;<span
+                      id="exe3-drop3"
+                      class="exe-block"
+                    ></span
+                    >); // output:
+                    <span id="exe3-drop4" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe3-ans1">10</p>
+                  <p class="exe-ans" id="exe3-ans2">+</p>
+                  <p class="exe-ans" id="exe3-ans3">z</p>
+                  <p class="exe-ans" id="exe3-ans4">15</p>
+                </div>
+                <div class="exe-footer">
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+                <!-- exercise question start -->
+              <div class="exe-part">
+                <div class="exe-header">
+                   <!-- exercise question text -->
+                  <h4>Divide 10 by 2, and show the result:</h4>
+                </div>
+                <div class="exe-body">
+                   <!-- &nbsp; force adding a single space -->
+                   <!-- let x = 10; -->
+                  <h3>let x = 10;</h3>
+                  <!-- let y = 2; -->
+                  <h3>let y = <span id="exe3-drop5" class="exe-block"></span>;</h3>
+                  <!-- let z = x / y; -->
+                  <h3>
+                    let z = x <span id="exe3-drop6" class="exe-block"></span> &nbsp;
+                    y;
+                  </h3>
+                  <!--  console.log(z); // output: 5 -->
+                  <h3>
+                    console.log(&nbsp;&nbsp;<span
+                      id="exe3-drop7"
+                      class="exe-block"
+                    ></span
+                    >); // output:
+                    <span id="exe3-drop8" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe3-ans5">2</p>
+                  <p class="exe-ans" id="exe3-ans6">/</p>
+                  <p class="exe-ans" id="exe3-ans7">z</p>
+                  <p class="exe-ans" id="exe3-ans8">5</p>
+                </div>
+                <div class="exe-footer">
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+                <!-- exercise question start -->
+              <div class="exe-part">
+                <div class="exe-header">
+                   <!-- exercise question text -->
+                  <h4>
+                    use Modulus Operator to find the division remainder of 7 by 2, and
+                    show the result:
+                  </h4>
+                </div>
+                <div class="exe-body">
+                  <!-- let x = 7; -->
+                  <h3>let x = 7;</h3>
+                  <!-- let y = 2; -->
+                  <h3>let y = <span id="exe3-drop9" class="exe-block"></span>;</h3>
+                  <!-- let z = x % y; -->
+                  <h3>
+                    let z = x
+                    <span id="exe3-drop10" class="exe-block"></span> &nbsp; y;
+                  </h3>
+                  <!-- console.log(z); // output: 1 -->
+                  <h3>
+                    console.log(&nbsp;&nbsp;<span
+                      id="exe3-drop11"
+                      class="exe-block"
+                    ></span
+                    >); // output:
+                    <span id="exe3-drop12" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe3-ans9">2</p>
+                  <p class="exe-ans" id="exe3-ans10">%</p>
+                  <p class="exe-ans" id="exe3-ans11">z</p>
+                  <p class="exe-ans" id="exe3-ans12">1</p>
+                </div>
+                <div class="exe-footer">
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+                <!-- exercise question start -->
+              <div class="exe-part">
+                <div class="exe-header">
+                   <!-- exercise question text -->
+                  <h4>
+                    Use the correct assignment operator that will result in x being 15
+                    (same as x = x + y).
+                  </h4>
+                </div>
+                <div class="exe-body">
+                  <!-- let x = 7; -->
+                  <h3>let x = 7;</h3>
+                  <!-- let y = 8; -->
+                  <h3>let y = <span id="exe3-drop13" class="exe-block"></span>;</h3>
+                  <!-- x += y; -->
+                  <h3>
+                    x &nbsp;<span id="exe3-drop14" class="exe-block"></span>
+                    &nbsp; y;
+                  </h3>
+                  <!--   console.log(x); // output: 15 -->
+                  <h3>
+                    console.log(&nbsp;&nbsp;<span
+                      id="exe3-drop15"
+                      class="exe-block"
+                    ></span
+                    >); // output:
+                    <span id="exe3-drop16" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe3-ans13">8</p>
+                  <p class="exe-ans" id="exe3-ans14">+=</p>
+                  <p class="exe-ans" id="exe3-ans15">x</p>
+                  <p class="exe-ans" id="exe3-ans16">15</p>
+                </div>
+                <div class="exe-footer">
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+            </div>
+            <!-- exercise content end -->
+          </div>
+           <!-- exercise wrapper end -->
+    </section>
+</body>
+</html>

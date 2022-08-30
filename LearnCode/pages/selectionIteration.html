@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery-ui css: required for code to work -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- jquery js: required for code to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jquery-ui js: required for code to work -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- main js: required for code to work -->
+    <script src="../js/script.js"></script>
+    <!-- main css: required for code to work   -->
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">Learn to code Logo</a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../pages/programStructure.html">Basic program structure</a>
+          </li>
+          <li><a href="../pages/variableTypes.html">Variable types</a></li>
+          <li>
+            <a href="../pages/mathCalculations.html"
+              >Mathematical calculations</a
+            >
+          </li>
+          <li><a href="../pages/printScreen.html">Printing to screen</a></li>
+          <li>
+            <a href="../pages/selectionIteration.html"
+              >Selection and Iteration</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Selection and Iteration</h1>
+    </header>
+    <section>
+      <div class="grid">
+        <div class="column">
+          <h2>Iteration</h2>
+          Iteration is the process of looping or repeating sections of a
+          program. There are two types of iteration count controlled or
+          condition controlled, count controlled loops repeat the same process a
+          specific number of times. condition controlled loops repeat the same
+          process over and over untill it gets a specific result.
+          <p>
+            In programming, iteration is often referred to as ‘looping’, because
+            when a program iterates it ‘loops’ to an earlier step
+          </p>
+        </div>
+        <div class="column">
+          <h2>Count controlled loops</h2>
+          A count-controlled loop is so called because it uses a counter to keep
+          track of how many times the algorithm has iterated.
+          <p></p>
+          So for example an F1 race may have 10 laps, while the number of laps
+          is less than (<) 10 the drivers will continue the loop, once it
+          reaches 10 the loop with finish. It is a count controlled loop because
+          the number of iterations to occur is already known.
+          <p>
+            These are known as FOR loops in code and are used to repeat a
+            specific code block a known number of times.
+          </p>
+        </div>
+        <div class="column">
+          <h2>Condition controlled loops</h2>
+          A condition-controlled loop is so called because iteration continues
+          while, or until, a condition is met.
+          <p>
+            An example for this would be a race where the drivers race while
+            they still have fuel, when fuel runs out they return to the pitstop,
+            this is know as a WHILE loop in coding since it's not specifically
+            known how many laps a driver will do until they need fuel. so WHILE
+            they have fuel the race continues.
+          </p>
+          <p>
+            In programming, condition-controlled loops are implemented using
+            WHILE statements.
+          </p>
+        </div>
+      </div>
+    </section>
+    <section>
+      <div class="grida">
+        <div class="column">
+          <h2>Selection</h2>
+          Selection is a decision or question.<br />At some point, a program may
+          need to ask a question because it has reached a step where one or more
+          options are available. Depending on the answer given, the program will
+          follow a certain step and ignore the others.
+          <p>
+            Many solutiuons feature several choices or decisions, these are know
+            as IF and ELSE statements.<br />An example would be queueing for a
+            rollercoaster IF you have a fast pass ticket you queue in line A
+            ELSE you queue in line B.
+          </p>
+        </div>
+        <div class="column">
+          <h2>IF statements</h2>
+          Programs consist of a set of instructions that are carried out one
+          after another. Sometimes there may be more than one path (or set of
+          steps) that can be followed. At this point, a decision needs to be
+          made. This decision is known as selection. For example, this simple
+          algorithm prints out a message depending on how old you are:
+          <ul>
+            <li>Ask how old you are</li>
+            <li>IF you are 18 or older</li>
+            <li>PRINT "You can learn to drive!"</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- exercise wrapper start -->
+      <div class="exe-wrapper exe5">
+        <!-- exercise title -->
+        <h2>Javascript Practical</h2>
+        <!-- exercise content start -->
+        <div class="exe-content">
+          <!-- exercise question start -->
+          <div class="exe-part active">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>Create a loop that runs as long as i is less than 10.</h4>
+            </div>
+            <div class="exe-body">
+              <!-- let i = 0; -->
+              <h3>let i = 0;</h3>
+              <!-- while(i < 10) { -->
+              <h3>
+                <span
+                  id="exe5-drop1"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >(i &nbsp;&nbsp;
+                <span id="exe5-drop2" class="exe-block"></span>
+                &nbsp;&nbsp; 10) {
+              </h3>
+              <!-- console.log(i); -->
+              <h3>
+                console.log(<span id="exe5-drop3" class="exe-block"></span>
+                &nbsp;&nbsp;);
+              </h3>
+              <!-- i++; -->
+              <h3>i++;</h3>
+              <!-- } -->
+              <h3>}</h3>
+              <p class="exe-ans" id="exe5-ans1">while</p>
+              <p class="exe-ans" id="exe5-ans2">&lt;</p>
+              <p class="exe-ans" id="exe5-ans3">i</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+          <!-- exercise question start -->
+          <div class="exe-part">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>
+                Create a loop that runs as long as i is less than 10, but
+                increase i with 2 each time.
+              </h4>
+            </div>
+            <div class="exe-body">
+              <!-- let i = 0; -->
+              <h3>let i = 0;</h3>
+              <!-- while(i < 10) { -->
+              <h3>
+                <span
+                  id="exe5-drop4"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span>
+                (i &lt; 10) {
+              </h3>
+              <!--  console.log(i); -->
+              <h3>
+                console.log(<span id="exe5-drop5" class="exe-block"></span>
+                &nbsp;&nbsp;);
+              </h3>
+              <!-- i = i + 2; -->
+              <h3>
+                i = i &nbsp;&nbsp;
+                <span id="exe5-drop6" class="exe-block"></span>
+                <span id="exe5-drop7" class="exe-block"></span>;
+              </h3>
+              <!-- } -->
+              <h3>}</h3>
+              <p class="exe-ans" id="exe5-ans4">while</p>
+              <p class="exe-ans" id="exe5-ans5">i</p>
+              <p class="exe-ans" id="exe5-ans6">+</p>
+              <p class="exe-ans" id="exe5-ans7">2</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+          <!-- exercise question start -->
+          <div class="exe-part">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>
+                Create a program that asks the user their age, and alert weather
+                they can learn to drive or not.
+              </h4>
+            </div>
+            <div class="exe-body">
+              <!-- let age = prompt("how old you are?"); -->
+              <h3>
+                let age = prompt(<span id="exe5-drop8" class="exe-block"></span>
+                &nbsp;&nbsp;);
+              </h3>
+              <!-- age = Number(age); -->
+              <h3>age = Number(age);</h3>
+              <!-- if(age >= 18){ -->
+              <h3>
+                <span
+                  id="exe5-drop9"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >(age >= 18){
+              </h3>
+              <!-- alert("You can learn to drive!"); -->
+              <h3>
+                alert(<span id="exe5-drop10" class="exe-block"></span>
+                &nbsp;&nbsp;)
+              </h3>
+              <!-- } else { -->
+              <h3>} else {</h3>
+              <!-- alert(  "You can not learn to drive!"); -->
+              <h3>
+                alert(<span id="exe5-drop11" class="exe-block"></span>
+                &nbsp;&nbsp;)
+              </h3>
+              <!-- } -->
+              <h3>}</h3>
+
+              <p class="exe-ans" id="exe5-ans8">"how old you are?"</p>
+              <p class="exe-ans" id="exe5-ans9">if</p>
+              <p class="exe-ans" id="exe5-ans10">"You can learn to drive!"</p>
+              <p class="exe-ans" id="exe5-ans11">
+                "You can not learn to drive!"
+              </p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+          <!-- exercise question start -->
+          <div class="exe-part">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>Create a loop that runs from 0 to 9.</h4>
+            </div>
+            <div class="exe-body">
+              <!-- let i; -->
+              <h3>let i;</h3>
+              <!-- for(i = 0; i < 10; i++) { -->
+              <h3>
+                <span
+                  id="exe5-drop12"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >(i = &nbsp;<span
+                  id="exe5-drop13"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >; i &lt; &nbsp;
+                <span
+                  id="exe5-drop14"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >;
+                <span
+                  id="exe5-drop15"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >) {
+              </h3>
+              <!--  console.log(i); -->
+              <h3>
+                console.log(<span id="exe5-drop16" class="exe-block"></span>
+                &nbsp;&nbsp;);
+              </h3>
+              <!-- } -->
+              <h3>}</h3>
+
+              <p class="exe-ans" id="exe5-ans12">for</p>
+              <p class="exe-ans" id="exe5-ans13">0</p>
+              <p class="exe-ans" id="exe5-ans14">10</p>
+              <p class="exe-ans" id="exe5-ans15">i++</p>
+              <p class="exe-ans" id="exe5-ans16">i</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+        </div>
+        <!-- exercise content end -->
+      </div>
+      <!-- exercise wrapper end -->
+    </section>
+  </body>
+</html>

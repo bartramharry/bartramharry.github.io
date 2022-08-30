@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- jquery-ui css: required for code to work -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- jquery js: required for code to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jquery-ui js: required for code to work -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- main js: required for code to work -->
+    <script src="../js/script.js"></script>
+    <!-- main css: required for code to work   -->
+    <link rel="stylesheet" href="../styles.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="../index.html" class="logo">Learn to code Logo</a>
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li>
+            <a href="../pages/programStructure.html">Basic program structure</a>
+          </li>
+          <li><a href="../pages/variableTypes.html">Variable types</a></li>
+          <li>
+            <a href="../pages/mathCalculations.html"
+              >Mathematical calculations</a
+            >
+          </li>
+          <li><a href="../pages/printScreen.html">Printing to screen</a></li>
+          <li>
+            <a href="../pages/selectionIteration.html"
+              >Selection and Iteration</a
+            >
+          </li>
+        </ul>
+      </nav>
+      <h1>Printing to screen</h1>
+    </header>
+    <section>
+      <div class="grid">
+        <div class="column">
+          <h2>Printing to screen</h2>
+          <p>
+            The following sentence asks someone to write a message on a
+            whiteboard:
+          </p>
+
+          <p>“Please write the words ‘Hello world!’ on the board.”</p>
+
+          This sentence is an instruction, which contains a single statement.
+          <p>The statement is ‘write the words’.</p>
+          In Python, the equivalent statement is print. print("Hello world!")
+        </div>
+        <div class="column"><img src="../images/large.png" alt="" /></div>
+        <div class="column">
+          <h2>Advanced printing to screen</h2>
+          In the next section we'll look at iteration and selection but a more
+          complicated command that can be printed to the screen might look like
+          this:
+          <p>OUTPUT "How old are you?"</p>
+          <p>INPUT User inputs their age</p>
+          <p>STORE the user's input in the age variable</p>
+          <p>IF age < 15 THEN</p>
+          <p>OUTPUT "You are eligible for a discount."</p>
+          <p>ELSE</p>
+          <p>OUTPUT "You are not eligible for a discount."</p>
+          Where each OUTPUT is words being printed to the screen to the user.
+        </div>
+      </div>
+    </section>
+    <section>
+      <!-- exercise wrapper start -->
+      <div class="exe-wrapper exe4">
+        <!-- exercise title -->
+        <h2>Javascript Practical</h2>
+        <!-- exercise content start -->
+        <div class="exe-content">
+          <!-- exercise question start -->
+          <div class="exe-part active">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>Assign the txt variable, and show it in the console:</h4>
+            </div>
+            <div class="exe-body">
+              <!-- &nbsp; force adding a single space -->
+              <!-- let txt = "Hello World!"; -->
+              <h3>
+                let txt = <span id="exe4-drop1" class="exe-block"></span>;
+              </h3>
+              <!-- console.log(txt); // output: "Hello World!" -->
+              <h3>
+                <span
+                  id="exe4-drop2"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >.log(<span id="exe4-drop3" class="exe-block"></span
+                >&nbsp;&nbsp;); // output: "Hello World!"
+              </h3>
+              <p class="exe-ans" id="exe4-ans1">"Hello World!"</p>
+              <p class="exe-ans" id="exe4-ans2">console</p>
+              <p class="exe-ans" id="exe4-ans3">txt</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+          <!-- exercise question start -->
+          <div class="exe-part">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>Use escape characters to display We are "Vikings".</h4>
+            </div>
+            <div class="exe-body">
+              <!-- &nbsp; force adding a single space -->
+              <!--   let txt = "We are \"Vikings\""; -->
+              <h3>
+                let txt = "We are
+                <span id="exe4-drop4" class="exe-block"></span>";
+              </h3>
+              <!-- console.log(txt); // output: 'We are "Vikings"' -->
+              <h3>
+                console.
+                <span
+                  id="exe4-drop5"
+                  class="exe-block"
+                  style="margin-right: 0"
+                ></span
+                >(&nbsp;&nbsp;<span id="exe4-drop6" class="exe-block"></span>);
+                // output:
+                <span id="exe4-drop7" class="exe-block"></span>
+              </h3>
+              <p class="exe-ans" id="exe4-ans4">\"Vikings\"</p>
+              <p class="exe-ans" id="exe4-ans5">log</p>
+              <p class="exe-ans" id="exe4-ans6">txt</p>
+              <p class="exe-ans" id="exe4-ans7">'We are "Vikings"'</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+          <!-- exercise question start -->
+          <div class="exe-part">
+            <div class="exe-header">
+              <!-- exercise question text -->
+              <h4>Concatenate the two strings to alert "Hello World!".</h4>
+            </div>
+            <div class="exe-body">
+              <!-- &nbsp; force adding a single space -->
+              <!-- let str1 = "Hello "; -->
+              <h3>
+                let str1 =
+                <span id="exe4-drop8" class="exe-block"></span>;
+              </h3>
+              <!-- let str2 = "World!"; -->
+              <h3>
+                let str2 =
+                <span id="exe4-drop9" class="exe-block"></span>;
+              </h3>
+              <!-- alert(str1 + str2); // output: "Hello World!"  -->
+              <h3>
+                alert(&nbsp;&nbsp;<span
+                  id="exe4-drop10"
+                  class="exe-block"
+                ></span>
+                + str2 ); // output:
+                <span id="exe4-drop11" class="exe-block"></span>
+              </h3>
+              <p class="exe-ans" id="exe4-ans8">"Hello "</p>
+              <p class="exe-ans" id="exe4-ans9">"World!"</p>
+              <p class="exe-ans" id="exe4-ans10">str1</p>
+              <p class="exe-ans" id="exe4-ans11">"Hello World!"</p>
+            </div>
+            <div class="exe-footer">
+              <button class="btn-next">Next</button>
+            </div>
+          </div>
+          <!-- exercise question end -->
+        </div>
+        <!-- exercise content end -->
+      </div>
+      <!-- exercise wrapper end -->
+    </section>
+  </body>
+</html>

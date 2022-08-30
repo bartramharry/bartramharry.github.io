@@ -1,0 +1,187 @@
+body {
+  background: #00a8e8;
+  font-family: "Courier New";
+  color: #ffffff;
+  margin: 0;
+  padding: 0;
+}
+header {
+  background: #007ea7;
+  padding: 20px;
+  text-align: center;
+}
+section {
+  background: #003459;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+div {
+  text-align: center;
+}
+.column {
+  background-color: #00a8e8;
+  padding: 1em 2em;
+  text-align: center;
+}
+.grid {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(3, 1fr);
+}
+.grida {
+  display: grid;
+  grid-column-gap: 20px;
+  grid-template-columns: repeat(2, 1fr);
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+nav li {
+  display: inline-block;
+  margin-right: 20px;
+}
+table,
+th,
+td {
+  border: 1px solid #003459;
+}
+/* RESPONSIVE RULES */
+@media screen and (max-width: 715px) {
+  nav li {
+    display: block;
+  }
+  .grid {
+    display: block;
+  }
+}
+footer {
+  background: #00171f;
+  padding: 10px, 20px;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+header .logo {
+  background-image: url("images/codemadeeasy_logo.png");
+  background-size: 300px;
+  background-repeat: no-repeat;
+  display: inline-block;
+  height: 80px;
+  width: 300px;
+  text-indent: -999999px;
+}
+/* Javascript Practical */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.exe-wrapper {
+  background: #00a8e8;
+  color: #fff;
+  font-family: "Courier New";
+  padding: 40px 20px;
+}
+.exe-wrapper h2 {
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 36px;
+}
+.exe-body h3 {
+  display: flex;
+  align-items: center;
+  margin: 40px 15px;
+}
+.exe-ans {
+  font-size: 19px;
+  background-color: #fff;
+  color: rgb(0, 23, 31);
+  padding: 15px;
+  display: inline-block;
+  min-width: 100px;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 5px;
+  user-select: none;
+  cursor: pointer;
+}
+.exe-ans.dropped {
+  position: static !important;
+  background: transparent;
+  color: rgb(0, 23, 31);
+  font-size: 25px;
+  max-width: unset;
+  width: unset;
+  text-align: center;
+  margin: 0;
+}
+
+.exe-block {
+  min-width: 100px;
+  display: inline-block;
+  border: 3px solid rgb(0, 23, 31);
+  border-top-color: transparent;
+  padding: 15px;
+  margin-right: 15px;
+}
+.exe-block:last-child {
+  margin-right: 0;
+  margin-left: 15px;
+}
+.exe-block.ui-dropped {
+  padding: 0;
+  border: 0;
+  text-align: center;
+}
+.exe-part {
+  margin-bottom: 40px;
+  display: none;
+}
+.exe-part.active {
+  display: block;
+}
+button.btn-next {
+  font-size: 20px;
+  font-weight: bold;
+  padding: 8px 30px;
+  display: inline-block;
+  cursor: pointer;
+  background: #003459;
+  color: #fff;
+  border: 1px solid rgb(0, 23, 31);
+  border-radius: 5px;
+}
+
+.exe-footer {
+  margin-top: 30px;
+  display: none;
+}
+.exe-footer.active {
+  display: block;
+}
+.exe-wrapper.done .exe-part {
+  display: block;
+}
+.exe-wrapper.done .exe-footer {
+  display: none;
+}
+#exe4-drop2 p,
+#exe4-drop4 p {
+  padding-right: 0 !important;
+}
+#exe4-drop5.ui-dropped {
+  min-width: unset;
+}
+#exe4-drop5 p {
+  padding-right: 0 !important;
+  padding-left: 0 !important;
+  min-width: unset;
+}

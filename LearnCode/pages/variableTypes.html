@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- jquery-ui css: required for code to work -->
+    <link
+      rel="stylesheet"
+      href="https://code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css"
+    />
+    <!-- jquery js: required for code to work -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <!-- jquery-ui js: required for code to work -->
+    <script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+    <!-- main js: required for code to work -->
+    <script src="../js/script.js"></script>
+    <!-- main css: required for code to work   -->
+    <link rel="stylesheet" href="../styles.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="../index.html" class="logo">Learn to code Logo</a>
+            <ul>
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="../pages/programStructure.html">Basic program structure</a></li>
+                <li><a href="../pages/variableTypes.html">Variable types</a></li>
+                <li><a href="../pages/mathCalculations.html">Mathematical calculations</a></li>
+                <li><a href="../pages/printScreen.html">Printing to screen</a></li>
+                <li><a href="../pages/selectionIteration.html">Selection and Iteration</a></li>
+            </ul>
+        </nav>
+        <h1>
+            Variable types
+        </h1>
+    </header>
+    <section>
+        <div class="grid">
+            <div class="column"><h2>What are Variables</h2>Sometimes we need computers to remember the information we give it and that it calculates during programs. A variable can be thought of as a box that the computer can use to store a value. The value held in that box can change or ‘vary’. A program can use as many variables as it needs it to.</div>
+            <div class="column"><h2>Types of Variables</h2>All variables are made up of three parts:
+            <ul>
+                <li>A Name</li>
+                <li>A Type</li>
+                <li>A Value</li>
+            </ul></div>
+            <div class="column"><h2>Why use Variables</h2>Variables are extremely useful when programming. If a variable is used for the length of a side in a simple program to calculate the perimeter of a square, it is easy to calculate the perimeter of a different sized square, simply by changing the value of the variable.</div>
+        </div>
+    </section>
+    <section>
+        <div>
+            Variables come in all shapes and sizes. Some are used to store numbers, some are used to store text and some are used for much more complicated types of data. <br>The data types to know are:</br>
+            <ul>
+                <li>
+                    <strong>String </strong>(or str or text) Used for a combination of any characters that appear on a keyboard, such as letters, numbers and symbols. 
+                </li>
+                <li>
+                    <strong>Character </strong>(or char) Used for single letters.
+                </li>
+                <li>
+                    <strong>Integer </strong>(or int) Used for whole numbers.
+                </li>
+                <li>
+                    <Strong>Float </Strong>(or Real) Used for numbers that contain decimal points, or for fractions.
+                </li>
+                <li>
+                    <strong>Boolean </strong>(or bool) Used where data is restricted to True/False or yes/no options.
+                </li>
+            </ul>
+            You can use variables to store numbers.<br>pocket_money = 20 The variable ‘pocket_money’ is used to store how much pocket money you have.</br> Right now you have £20.
+        </div>
+    </section>
+    <section>
+      <!-- exercise wrapper start -->
+        <div class="exe-wrapper exe2">
+          <!-- exercise title -->
+            <h2>Javascript Practical</h2>
+            <!-- exercise content start -->
+            <div class="exe-content">
+                <!-- exercise question start -->
+              <div class="exe-part active">
+                <div class="exe-header">
+                     <!-- exercise question text -->
+                  <h4>
+                    Use comments to describe the correct data type of the following
+                    variables:
+                  </h4>
+                </div>
+                <div class="exe-body">
+                   <!-- &nbsp; force adding a single space -->
+                   <!--  let length = 16; // Number  -->
+                  <h3>
+                    let length = 16; &nbsp;&nbsp;//
+                    <span id="exe2-drop1" class="exe-block"></span>
+                  </h3>
+                  <!--  let lastName = "Johnson"; // String -->
+                  <h3>
+                    let lastName = "Johnson"; &nbsp;&nbsp;//
+                    <span id="exe2-drop2" class="exe-block"></span>
+                  </h3>
+                  <!--  const x = { firstName: "John", lastName: "Doe" }; // Object -->
+                  <h3>
+                    const x = { firstName: "John", lastName: "Doe" }; &nbsp;&nbsp;//
+                    <span id="exe2-drop3" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe2-ans1">Number</p>
+                  <p class="exe-ans" id="exe2-ans2">String</p>
+                  <p class="exe-ans" id="exe2-ans3">Object</p>
+                </div>
+                <div class="exe-footer">
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+                <!-- exercise question start -->
+              <div class="exe-part">
+                <div class="exe-header">
+                   <!-- exercise question text -->
+                  <h4>
+                    Use comments to describe the correct data type of the following
+                    variables:
+                  </h4>
+                </div>
+                <div class="exe-body">
+                  <!-- &nbsp; force adding a single space -->
+                  <!-- let x; // undefined -->
+                  <h3>
+                    let x; &nbsp;&nbsp;//
+                    <span id="exe2-drop4" class="exe-block"></span>
+                  </h3>
+                  <!--  const cars = ["Saab", "Volvo", "BMW"]; // Array -->
+                  <h3>
+                    const cars = ["Saab", "Volvo", "BMW"]; &nbsp;&nbsp;//
+                    <span id="exe2-drop5" class="exe-block"></span>
+                  </h3>
+                  <!-- let isCarsAvailable = true; // Boolean -->
+                  <h3>
+                    let isCarsAvailable = true; &nbsp;&nbsp;//
+                    <span id="exe2-drop6" class="exe-block"></span>
+                  </h3>
+                  <p class="exe-ans" id="exe2-ans4">undefined</p>
+                  <p class="exe-ans" id="exe2-ans5">Array</p>
+                  <p class="exe-ans" id="exe2-ans6">Boolean</p>
+                </div>
+                <!-- "exe-footer" will be hidden until it has an active class -->
+                <div class="exe-footer">
+                   <!-- exercise next button to go to next question  -->
+                  <button class="btn-next">Next</button>
+                </div>
+              </div>
+                <!-- exercise question end -->
+            </div>
+            <!-- exercise content end -->
+          </div>
+          <!-- exercise wrapper end -->
+    </section>
+</body>
+</html>
